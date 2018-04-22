@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class TestSin extends CalculatorTestBase {
 
-    @Test(description = "TestSin", dataProvider = "dataProvider_TestSin", groups = "group_sin_cos")
+    @Test(testName = "TestSin", dataProvider = "dataProvider_TestSin", groups = "group_sin_cos")
     public void testSin(double a, double expectedResult) throws Exception {
         double result = calculator.sin(a);
         Assert.assertEquals(result, expectedResult, 0.001, "Test for TestSin failed: ");

@@ -4,13 +4,15 @@ import calculator_test.CalculatorTestBase;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+import static java.lang.Double.NaN;
+
 
 public class TestSqrt extends CalculatorTestBase {
 
-    @Test(description = "TestSqrt", dataProvider = "dataProvider_TestSqrt", groups = "group_all", priority = 201)
+    @Test(testName = "TestSqrt", dataProvider = "dataProvider_TestSqrt")
     public void testSqrt(double a, double expectedResult) throws Exception {
         double result = calculator.sqrt(a);
-        Assert.assertEquals(result, expectedResult, 0.001, "Test for " + getClass() + " failed:");
+        Assert.assertEquals(result, expectedResult, 0.001, "Test for TestSqrt failed:");
     }
 
     @DataProvider(name = "dataProvider_TestSqrt")
@@ -18,8 +20,8 @@ public class TestSqrt extends CalculatorTestBase {
         return new Object[][]{
                 {2, 1.414},
                 {0, 0},
-                {-1, 1.0}, //Корень чётной степени из отрицательного числа не существует в области вещественных чисел - ? in calc = NaN
                 {0.14, 0.374},
+                {-1, NaN}
         };
     }
 }

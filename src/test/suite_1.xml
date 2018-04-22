@@ -5,15 +5,15 @@
 
     <test name = "test_smoke" group-by-instances="true"  parallel="classes" thread-count="2">
         <classes>
-            <class name="calculator_test.test_sum.TestSumLong" />
-            <class name="calculator_test.test_sum.TestSumDouble" />
-            <class name="calculator_test.test_sub.TestSubLong" />
-            <class name="calculator_test.test_sub.TestSubDouble" />
-            <class name="calculator_test.test_mult.TestMultLong" />
-            <class name="calculator_test.test_mult.TestMultDouble" />
-            <class name="calculator_test.test_div.TestDivLong" />
-            <class name="calculator_test.test_div.TestDivDouble" />
-            <class name="calculator_test.test_div.TestDivZero" />
+            <class name="calculator_test.test_smoke.test_sum.TestSumLong" />
+            <class name="calculator_test.test_smoke.test_sum.TestSumDouble" />
+            <class name="calculator_test.test_smoke.test_sub.TestSubLong" />
+            <class name="calculator_test.test_smoke.test_sub.TestSubDouble" />
+            <class name="calculator_test.test_smoke.test_mult.TestMultLong" />
+            <class name="calculator_test.test_smoke.test_mult.TestMultDouble" />
+            <class name="calculator_test.test_smoke.test_div.TestDivLong" />
+            <class name="calculator_test.test_smoke.test_div.TestDivDouble" />
+            <class name="calculator_test.test_smoke.test_div.TestDivZero" />
         </classes>
     </test>
 

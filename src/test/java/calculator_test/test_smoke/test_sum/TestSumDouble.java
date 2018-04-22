@@ -1,4 +1,4 @@
-package calculator_test.test_sum;
+package calculator_test.test_smoke.test_sum;
 
 import calculator_test.CalculatorTestBase;
 import org.testng.Assert;

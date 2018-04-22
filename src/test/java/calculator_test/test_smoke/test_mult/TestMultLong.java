@@ -1,4 +1,4 @@
-package calculator_test.test_mult;
+package calculator_test.test_smoke.test_mult;
 
 import calculator_test.CalculatorTestBase;
 import org.testng.Assert;
@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class TestMultLong extends CalculatorTestBase {
 
-    @Test(description = "TestMultLong", dataProvider = "dataProvider_TestMultLong")
+    @Test(testName = "TestMultLong", dataProvider = "dataProvider_TestMultLong")
     public void testMultLong(long a, long b, long res) {
         Assert.assertEquals(calculator.mult(a, b), res, "TestMultLong result:");
     }

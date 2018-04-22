@@ -1,4 +1,4 @@
-package calculator_test.test_div;
+package calculator_test.test_smoke.test_div;
 
 import calculator_test.CalculatorTestBase;
 import org.testng.Assert;
@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class TestDivDouble extends CalculatorTestBase {
 
-    @Test(description = "TestDivDouble", dataProvider = "dataProvider_TestDivDouble")
+    @Test(testName = "TestDivDouble", dataProvider = "dataProvider_TestDivDouble")
     public void testDivDouble(double a, double b, double res) {
         Assert.assertEquals(calculator.div(a, b), res, 0.01, "TestDivDouble result:");
     }

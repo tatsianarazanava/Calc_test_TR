@@ -1,4 +1,4 @@
-package calculator_test.test_sub;
+package calculator_test.test_smoke.test_sub;
 
 import calculator_test.CalculatorTestBase;
 import org.testng.Assert;

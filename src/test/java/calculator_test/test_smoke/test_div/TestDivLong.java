@@ -1,4 +1,4 @@
-package calculator_test.test_div;
+package calculator_test.test_smoke.test_div;
 
 import calculator_test.CalculatorTestBase;
 import org.testng.Assert;
@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class TestDivLong extends CalculatorTestBase {
 
-    @Test(description = "TestDivLong", dataProvider = "dataProvider_TestDivLong")
+    @Test(testName = "TestDivLong", dataProvider = "dataProvider_TestDivLong")
     public void testDivLong(long a, long b, long res) {
         Assert.assertEquals(calculator.div(a, b), res, "TestDivLong result:");
     }

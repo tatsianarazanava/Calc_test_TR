@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class TestCos extends CalculatorTestBase {
 
-    @Test(description = "TestCos", dataProvider = "dataProvider_TestCos", groups = "group_sin_cos")
+    @Test(testName = "TestCos", dataProvider = "dataProvider_TestCos", groups = "group_sin_cos")
     public void testCos(double a, double expectedResult) throws Exception {
         double result = calculator.cos(a);
         Assert.assertEquals(result, expectedResult, 0.001, "Test for TestCos failed: ");
