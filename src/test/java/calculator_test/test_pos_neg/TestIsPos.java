@@ -14,6 +14,6 @@ public class TestIsPos extends CalculatorTestBase {
 
     @DataProvider(name = "dataProvider_TestIsPos")
     public Object[] dataProvider() {
-        return new Object[]{0, 1, 3, 5, 101, -213};
+        return new Object[]{1, 3, 5, 101};
     };
 }
