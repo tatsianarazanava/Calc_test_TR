@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite_2">
+
+    <test name = "test_common" group-by-instances="true">
+        <groups>
+            <define name="group_sin_cos"/>
+        </groups>
+        <classes>
+            <class name="calculator_test.test_other.TestPow" />
+            <class name="calculator_test.test_other.TestSqrt" />
+            <class name="calculator_test.test_other.TestSin" />
+            <class name="calculator_test.test_other.TestCos" />
+            <class name="calculator_test.test_other.TestTg" />
+            <class name="calculator_test.test_other.TestCtg" />
+        </classes>
+    </test>
+
+
+</suite>
